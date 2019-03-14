@@ -30,6 +30,7 @@ public:
     QTableWidget *tableWidget;
     QPushButton *Calculate;
     QLabel *showGPA;
+    QPushButton *selectAll;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -53,13 +54,16 @@ public:
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
-        tableWidget->setGeometry(QRect(0, 310, 591, 351));
+        tableWidget->setGeometry(QRect(0, 310, 671, 351));
         Calculate = new QPushButton(centralWidget);
         Calculate->setObjectName(QStringLiteral("Calculate"));
         Calculate->setGeometry(QRect(740, 240, 93, 28));
         showGPA = new QLabel(centralWidget);
         showGPA->setObjectName(QStringLiteral("showGPA"));
         showGPA->setGeometry(QRect(230, 180, 72, 15));
+        selectAll = new QPushButton(centralWidget);
+        selectAll->setObjectName(QStringLiteral("selectAll"));
+        selectAll->setGeometry(QRect(220, 270, 93, 28));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -89,7 +93,8 @@ public:
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
         ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "\346\210\220\347\273\251", nullptr));
         Calculate->setText(QApplication::translate("MainWindow", "\350\256\241\347\256\227", nullptr));
-        showGPA->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        showGPA->setText(QString());
+        selectAll->setText(QApplication::translate("MainWindow", "\345\205\250\351\200\211/\345\217\215\351\200\211", nullptr));
     } // retranslateUi
 
 };

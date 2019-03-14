@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[9];
-    char stringdata0[80];
+    QByteArrayData data[10];
+    char stringdata0[101];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,12 +39,13 @@ QT_MOC_LITERAL(4, 42, 14), // "vector<course>"
 QT_MOC_LITERAL(5, 57, 8), // "add_item"
 QT_MOC_LITERAL(6, 66, 1), // "i"
 QT_MOC_LITERAL(7, 68, 6), // "course"
-QT_MOC_LITERAL(8, 75, 4) // "info"
+QT_MOC_LITERAL(8, 75, 4), // "info"
+QT_MOC_LITERAL(9, 80, 20) // "on_selectAll_clicked"
 
     },
     "MainWindow\0on_Calculate_clicked\0\0"
     "loadfile\0vector<course>\0add_item\0i\0"
-    "course\0info"
+    "course\0info\0on_selectAll_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -54,7 +55,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -62,14 +63,16 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   29,    2, 0x08 /* Private */,
-       3,    0,   30,    2, 0x08 /* Private */,
-       5,    2,   31,    2, 0x08 /* Private */,
+       1,    0,   34,    2, 0x08 /* Private */,
+       3,    0,   35,    2, 0x08 /* Private */,
+       5,    2,   36,    2, 0x08 /* Private */,
+       9,    0,   41,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     0x80000000 | 4,
     QMetaType::Void, QMetaType::Int, 0x80000000 | 7,    6,    8,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -84,6 +87,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: { vector<course> _r = _t->loadfile();
             if (_a[0]) *reinterpret_cast< vector<course>*>(_a[0]) = std::move(_r); }  break;
         case 2: _t->add_item((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< course(*)>(_a[2]))); break;
+        case 3: _t->on_selectAll_clicked(); break;
         default: ;
         }
     }
@@ -114,13 +118,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

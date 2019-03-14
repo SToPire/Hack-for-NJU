@@ -19,7 +19,7 @@
      <rect>
       <x>0</x>
       <y>310</y>
-      <width>591</width>
+      <width>671</width>
       <height>351</height>
      </rect>
     </property>
@@ -67,7 +67,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectAll">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>270</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>全选/反选</string>
     </property>
    </widget>
   </widget>

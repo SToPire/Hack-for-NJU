@@ -36,6 +36,8 @@ private slots:
     void on_Calculate_clicked();
     vector<course> loadfile();
     void add_item(int i,course info);
+    void on_selectAll_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

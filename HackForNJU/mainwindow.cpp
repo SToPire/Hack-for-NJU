@@ -73,3 +73,12 @@ void MainWindow::on_Calculate_clicked()
     }
     ui->showGPA->setText(QString::number((sum/cre)/20.0,10,3));
 }
+
+void MainWindow::on_selectAll_clicked()
+{
+    int row=ui->tableWidget->rowCount();
+    for(int i=0;i<row;++i)
+    {
+        ui->tableWidget->selectRow(i);
+    }
+}

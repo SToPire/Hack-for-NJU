@@ -277,6 +277,13 @@ debug\moc_mainwindow.cpp: D:\QT\5.11.2\msvc2017_64\include\QtWidgets\QMainWindow
 		D:\QT\5.11.2\msvc2017_64\include\QtGui\qtouchdevice.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qtabwidget.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtGui\qicon.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QTextCodec \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\qtextcodec.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QFile \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QDebug \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\QMessageBox \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qmessagebox.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qdialog.h \
 		..\HackForNJU\mainwindow.h \
 		debug\moc_predefs.h \
 		D:\QT\5.11.2\msvc2017_64\bin\moc.exe
@@ -412,6 +419,13 @@ debug\main.obj: ..\HackForNJU\main.cpp ..\HackForNJU\mainwindow.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtGui\qtouchdevice.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qtabwidget.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtGui\qicon.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QTextCodec \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\qtextcodec.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QFile \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QDebug \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\QMessageBox \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qmessagebox.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qdialog.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\QApplication \
 		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qapplication.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtCore\qcoreapplication.h \
@@ -527,6 +541,13 @@ debug\mainwindow.obj: ..\HackForNJU\mainwindow.cpp ..\HackForNJU\mainwindow.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtGui\qtouchdevice.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qtabwidget.h \
 		D:\QT\5.11.2\msvc2017_64\include\QtGui\qicon.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QTextCodec \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\qtextcodec.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QFile \
+		D:\QT\5.11.2\msvc2017_64\include\QtCore\QDebug \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\QMessageBox \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qmessagebox.h \
+		D:\QT\5.11.2\msvc2017_64\include\QtWidgets\qdialog.h \
 		ui_mainwindow.h
 
 debug\moc_mainwindow.obj: debug\moc_mainwindow.cpp 
