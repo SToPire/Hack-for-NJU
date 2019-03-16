@@ -6,22 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1046</width>
-    <height>731</height>
+    <width>1209</width>
+    <height>820</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/frame.jpg);</string>
+   </property>
    <widget class="QTableWidget" name="tableWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>20</x>
       <y>310</y>
-      <width>671</width>
-      <height>351</height>
+      <width>761</width>
+      <height>431</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(200, 190, 227,50%)</string>
     </property>
     <column>
      <property name="text">
@@ -47,11 +53,22 @@
    <widget class="QPushButton" name="Calculate">
     <property name="geometry">
      <rect>
-      <x>740</x>
-      <y>240</y>
-      <width>93</width>
-      <height>28</height>
+      <x>900</x>
+      <y>500</y>
+      <width>141</width>
+      <height>61</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(:/4.jpg)</string>
     </property>
     <property name="text">
      <string>计算</string>
@@ -60,11 +77,23 @@
    <widget class="QLabel" name="showGPA">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>180</y>
-      <width>72</width>
-      <height>15</height>
+      <x>540</x>
+      <y>260</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe Print</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(:/3.jpg)
+</string>
     </property>
     <property name="text">
      <string/>
@@ -73,24 +102,48 @@
    <widget class="QPushButton" name="selectAll">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>270</y>
-      <width>93</width>
-      <height>28</height>
+      <x>160</x>
+      <y>260</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(:/3.jpg)</string>
+    </property>
     <property name="text">
-     <string>全选/反选</string>
+     <string>全选</string>
     </property>
    </widget>
    <widget class="QRadioButton" name="nju">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>100</y>
-      <width>115</width>
-      <height>19</height>
+      <x>900</x>
+      <y>280</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(:/4.jpg)</string>
     </property>
     <property name="text">
      <string>南大算法</string>
@@ -99,11 +152,22 @@
    <widget class="QRadioButton" name="std">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>130</y>
-      <width>115</width>
-      <height>19</height>
+      <x>900</x>
+      <y>330</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(:/4.jpg)</string>
     </property>
     <property name="text">
      <string>标准算法</string>
@@ -112,14 +176,51 @@
    <widget class="QRadioButton" name="wes">
     <property name="geometry">
      <rect>
-      <x>730</x>
-      <y>170</y>
-      <width>115</width>
-      <height>19</height>
+      <x>900</x>
+      <y>380</y>
+      <width>131</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(:/4.jpg)</string>
     </property>
     <property name="text">
      <string>WES算法</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectAll_2">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>260</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:url(:/3.jpg)</string>
+    </property>
+    <property name="text">
+     <string>反选</string>
     </property>
    </widget>
   </widget>
@@ -128,10 +229,25 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1046</width>
+     <width>1209</width>
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionOpen_O"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout_A">
+    <property name="title">
+     <string>About(&amp;A)</string>
+    </property>
+    <addaction name="actionDeveloper_D"/>
+    <addaction name="actionInstructions_I"/>
+   </widget>
+   <addaction name="menuFile_F"/>
+   <addaction name="menuAbout_A"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -142,8 +258,46 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen_O">
+   <property name="icon">
+    <iconset resource="pic.qrc">
+     <normaloff>:/t1.png</normaloff>:/t1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionDeveloper_D">
+   <property name="icon">
+    <iconset resource="pic.qrc">
+     <normaloff>:/t2.png</normaloff>:/t2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Developer(&amp;D)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionInstructions_I">
+   <property name="icon">
+    <iconset resource="pic.qrc">
+     <normaloff>:/t3.png</normaloff>:/t3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Instructions(&amp;I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
  <connections/>
 </ui>

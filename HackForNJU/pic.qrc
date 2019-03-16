@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>8.jpg</file>
+        <file>7.jpg</file>
+        <file>6.jpg</file>
+        <file>frame.jpg</file>
+        <file>1.jpg</file>
+        <file>2.jpg</file>
+        <file>3.jpg</file>
+        <file>4.jpg</file>
+        <file>5.jpg</file>
+        <file>9.jpg</file>
+        <file>main.cpp</file>
+        <file>mainwindow.cpp</file>
+        <file>mainwindow.h</file>
+        <file>10.PNG</file>
+        <file>11.jpg</file>
+        <file>11.png</file>
+        <file>t1.png</file>
+        <file>t2.png</file>
+        <file>t3.png</file>
+    </qresource>
+</RCC>
