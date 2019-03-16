@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     {
         add_item(i,courses[i]);
     }
+    ui->nju->setChecked(true);
 }
 
 MainWindow::~MainWindow()
@@ -59,26 +60,27 @@ void MainWindow::on_Calculate_clicked()
 {
     QItemSelectionModel *selections=ui->tableWidget->selectionModel();
     QModelIndexList selectedItems=selections->selectedIndexes();
-    set<int> si;
-    for(int i=0;i<selectedItems.count();++i)
+    if(ui->nju->isChecked())
     {
-        si.insert(selectedItems.at(i).row());
+        set<int> si;
+        for(int i=0;i<selectedItems.count();++i)
+        {
+            si.insert(selectedItems.at(i).row());
+        }
+        double sum=0.0;
+        double cre=0.0;
+        for(auto a:si)
+        {
+            sum+=courses[a].credit*courses[a].score;
+            cre+=courses[a].credit;
+        }
+        ui->showGPA->setText(QString::number((sum/cre)/20.0,10,3));
     }
-    double sum=0.0;
-    double cre=0.0;
-    for(auto a:si)
-    {
-        sum+=courses[a].credit*courses[a].score;
-        cre+=courses[a].credit;
-    }
-    ui->showGPA->setText(QString::number((sum/cre)/20.0,10,3));
 }
 
 void MainWindow::on_selectAll_clicked()
 {
     int row=ui->tableWidget->rowCount();
     for(int i=0;i<row;++i)
-    {
         ui->tableWidget->selectRow(i);
-    }
 }

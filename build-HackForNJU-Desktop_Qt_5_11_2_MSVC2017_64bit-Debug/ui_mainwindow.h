@@ -16,6 +16,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
 #include <QtWidgets/QToolBar>
@@ -31,6 +32,9 @@ public:
     QPushButton *Calculate;
     QLabel *showGPA;
     QPushButton *selectAll;
+    QRadioButton *nju;
+    QRadioButton *std;
+    QRadioButton *wes;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -64,6 +68,15 @@ public:
         selectAll = new QPushButton(centralWidget);
         selectAll->setObjectName(QStringLiteral("selectAll"));
         selectAll->setGeometry(QRect(220, 270, 93, 28));
+        nju = new QRadioButton(centralWidget);
+        nju->setObjectName(QStringLiteral("nju"));
+        nju->setGeometry(QRect(730, 100, 115, 19));
+        std = new QRadioButton(centralWidget);
+        std->setObjectName(QStringLiteral("std"));
+        std->setGeometry(QRect(730, 130, 115, 19));
+        wes = new QRadioButton(centralWidget);
+        wes->setObjectName(QStringLiteral("wes"));
+        wes->setGeometry(QRect(730, 170, 115, 19));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -95,6 +108,9 @@ public:
         Calculate->setText(QApplication::translate("MainWindow", "\350\256\241\347\256\227", nullptr));
         showGPA->setText(QString());
         selectAll->setText(QApplication::translate("MainWindow", "\345\205\250\351\200\211/\345\217\215\351\200\211", nullptr));
+        nju->setText(QApplication::translate("MainWindow", "\345\215\227\345\244\247\347\256\227\346\263\225", nullptr));
+        std->setText(QApplication::translate("MainWindow", "\346\240\207\345\207\206\347\256\227\346\263\225", nullptr));
+        wes->setText(QApplication::translate("MainWindow", "WES\347\256\227\346\263\225", nullptr));
     } // retranslateUi
 
 };
